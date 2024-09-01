@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <h1>ReachInBox Assignment</h1>
+    <div class="container">
+      <div class="option">Sign In With</div>
+      <div class="google">
+        <a id="signin-btn-google" href="#"><i class="fab fa-google"></i>Sign in With Google</a>
+      </div>
+      <div class="microsoft">
+        <a id="signin-btn-ms" href="#"><i class="fab fa-microsoft"></i>Sign in With Microsoft</a>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const signinButton1 = document.getElementById('signin-btn-google');
+
+        signinButton1.addEventListener('click', function() {
+          window.location.href = 'https://reachin-box-assignment.onrender.com/auth/google';
+        });
+
+        const signinButton2 = document.getElementById('signin-btn-ms');
+
+        signinButton2.addEventListener('click', function() {
+          window.location.href = 'https://reachin-box-assignment.onrender.com/outlook/signin';
+        });
+      });
+    </script>
+  </body>
+</html>
